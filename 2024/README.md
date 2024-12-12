@@ -5,3 +5,5 @@ DAY 1: https://adventofcode.com/2024/day/1
 DAY 2: https://adventofcode.com/2024/day/2
 
 DAY 3: https://adventofcode.com/2024/day/3
+
+DAY 4: https://adventofcode.com/2024/day/4
