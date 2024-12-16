@@ -10,6 +10,8 @@ DAY 4: https://adventofcode.com/2024/day/4
 
 DAY 5: https://adventofcode.com/2024/day/5
 
+DAY 7: https://adventofcode.com/2024/day/7
+
 Goals:
 - Add verbose comments to make each program easier to understand
 - Optimize code for faster run times
