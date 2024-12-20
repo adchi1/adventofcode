@@ -16,26 +16,23 @@ def getResult(operands, operator):
 
 # this function returns the results of each equation 
 def validResults(equations, signs):
-    results = []
+    sum = 0
     for result in equations:
         num = len(equations[result])-1
         operators = [''.join(comb) for comb in itertools.product(signs, repeat=num)]
         for operator in operators:
             if getResult(equations[result], operator) == int(result):
-                results.append(result)
+                sum += result
                 break
-    return sum([int(result) for result in results])
+    return sum
     
 
 if __name__ == "__main__":
     with open(input("Enter the file path to the equations: \n"), 'r') as file:
-        equations = file.read().split("\n")
-    
-    # the data is stored as a dictionary with results that are linked to a list of operands
+        equations = [equation.split(":") for equation in file.read().split("\n")]
     results = []
     operands = []
     for equation in equations:
-        equation = equation.split(":")
         results.append(equation[0])
         operands.append(equation[1].split())
     equations = dict(zip(results, operands))
